@@ -13,7 +13,9 @@
     <p class="error" *ngIf="emailMessage"> {{ emailMessage }} </p>
 
     <input  id="email-input" type="email" placeholder="blah@blah.com"
-        [(ngModel)]="theUser.fakeEmail" name="fakeEmail">
+        [(ngModel)]="theUser.fakeEmail" name="fakeEmail"
+        (blur)="handleTheSubmission()">
+        <!-- "blur" happens when your cursor leaves an input -->
     <br>
 
 
@@ -22,7 +24,9 @@
     <p class="error" *ngIf="passwordMessage"> {{ passwordMessage }} </p>
 
     <input  id="password-input" type="password" placeholder="******"
-        [(ngModel)]="theUser.fakePassword" name="fakePassword">
+        [(ngModel)]="theUser.fakePassword" name="fakePassword"
+        (blur)="handleTheSubmission()">
+        <!-- "blur" happens when your cursor leaves an input -->
     <br>
 
     <button> Log In </button>
