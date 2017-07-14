@@ -1,0 +1,16 @@
+p {
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+small {
+  font-size: 20px;
+  font-style: italic;
+  color: #888;
+}
+
+button {
+  background-color: red;
+  color: white;
+}
